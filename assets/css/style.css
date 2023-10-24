@@ -1,24 +1,31 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #c4cec4;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     background-color: #0077C0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #c4cec4;
-    height: 40px;
-    margin-top: 10px;
+    width: 50%;
 }
 
-header ul {
+nav ul {
     display: flex;
-    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
     list-style: none;
+    background-color: #0077C0;
+    height: 90;
 }
 
 aside { 
@@ -38,7 +45,7 @@ section {
 footer{
     position: relative;
     bottom: 0;
-    width: 75%;
+    width: 80%;
     float: right;
 }
 
@@ -49,16 +56,44 @@ footer ul {
     list-style: none;
 }
 
+
 .about-me {
-    height: 20%;
+    height: 10%;
+
 }
 
 .work {
-    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80%;
+    margin-top: 2%;
 }
 
 .contact-me {
-    height: 10%;
+    height: 5%;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #0077c0;
+    border: none;
+    color: #c4cec4;
+    opacity: 0.5;
+    transition: 0.8s;
+}
+
+.btn:hover {
+    opacity: 1;
+    box-shadow: 5px 2px 2px grey;
+
+}
+
+header a:hover {
+    display: block;
+    color: #c4cec4;
+    transition: all 0.9s ease-in-out;
 }
 
 #about-me, #work, #contact-me {
@@ -69,3 +104,27 @@ footer ul {
     text-align: right;
     margin-left: 5%;
 }
+
+#surf-report {
+    display: flex;
+    align-items: flex-end;
+    width: 99%;
+    height: 35%;
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#surf-report ~ * {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width:46%;
+    height: 20%;
+    border: 2px solid black;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
