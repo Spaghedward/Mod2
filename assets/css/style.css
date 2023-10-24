@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0077C0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #c4cec4;
+    height: 40px;
+    margin-top: 10px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+aside { 
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+}
+
+section {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 75%;
+    float: right;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.about-me {
+    height: 20%;
+}
+
+.work {
+    height: 70%;
+}
+
+.contact-me {
+    height: 10%;
+}
+
+#about-me, #work, #contact-me {
+    border-right: 5px solid black;
+}
+
+.about-me p {
+    text-align: right;
+    margin-left: 5%;
+}
