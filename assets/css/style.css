@@ -118,7 +118,7 @@ header a:hover {
 }
 
 .sub-header {
-    background-color: #ee6730;
+    background-image: url("../images/ball.jpg");
 }
 
 .overlay {
@@ -183,5 +183,43 @@ header a:hover {
 
     .work{
         font-size: small
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: smaller;
+    }
+
+    
+}
+
+@media screen and (max-width: 590px) {
+    .about-me, .contact-me {
+        font-size: x-small;
+    }
+
+    .work {
+        width: 90%;
+    }
+
+    aside {
+        width: 10%;
+    }
+
+    #surf-report ~ * {
+        display: flex;
+        flex-direction: row;
+        width:38%;
+        height: 20%;
+        border: 2px solid black;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
     }
 }
